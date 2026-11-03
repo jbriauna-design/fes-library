@@ -62,6 +62,19 @@ li {
   list-style: none;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
 .nav__link {
  margin-left: 16px;
  text-decoration: none;
@@ -325,13 +338,12 @@ FEATURES
 .books {
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px;
   margin: 0 auto;
-row-gap: 24px;
+  row-gap: 24px;
 }
 
 .book {
-  width: 50%;
+  width: 25%;
   padding: 16px;
   box-sizing: border-box;
   text-align: center;
@@ -385,7 +397,11 @@ EXPLORE
 */
 
 #explore {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: rgba(115, 66, 214, 0.1); 
+}
+
+#explore .btn {
+  font-weight: 700;
 }
 
 
@@ -395,8 +411,9 @@ FOOTER
 
 */
 
-.footer {
+ footer {
   background-color: #242424;
+  padding: 48px 0;
 }
 
 .footer__logo {
@@ -464,4 +481,4 @@ width: 50%;
 
 .highlight:not(last-child) {
   margin-bottom: 24px;
-}
+} 
