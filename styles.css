@@ -113,13 +113,13 @@ z-index: 100;
 display: flex;
 justify-content: center;
 align-items: center;
-transition: all 300,s ease;
+transition: all 300ms ease;
 visibility: hidden;
 opacity: 0;
 }
 
 .menu--open .menu__backdrop {
-visibilty: visible;
+visibility: visible;
 opacity: 1;
 }
 
@@ -440,10 +440,12 @@ FOOTER
 
 
 /* SMALL PHONES. TABLETS, LARGE SMARTHPHONES */
+
 @media(max-width: 768px) {
-.header__description {
+  .header__description 
   padding: 0 24px;
 }
+
 
 
 h1 {
@@ -464,14 +466,14 @@ width: 50%;
 
 
 /* SMALL PHONES, LARGE SMARTHPHONES */
-@media (max-width: 550px;) {
-  .nav__links {
-    display: none;
-  }
+@media (max-width: 550px) {
+  .nav-links {
+  display: none;
+} 
+}
 
   .btn__menu {
-    display: block;
-  }
+  display: block;
 }
 
 .highlight {
